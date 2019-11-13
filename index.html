@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/css.css">
+    <link rel="stylesheet" href="./css/reset.css">
+</head>
+<body>
+        <div id="header">
+                <!-- <div class="headerlink">    
+                    <div class="wrap">
+                      <a href="">西培服务</a>
+                      <a href="">西培游学</a>
+                      <a href="">在线课程</a>
+                      <a href="">关于西培</a>
+                      <a href="">小程序
+                          <div>
+                              <img src="" alt="">
+                          </div>
+                      </a>
+                </div>
+                </div> -->
+            </div>
+</body>
+<script src="http://code.jquery.com/jquery-latest.js"></script>
+<script>
+//    $(function(){
+// 	$('#header').load('./tpl/header.html');
+// 	// $('#foot').load('./tpl/foot.php');
+// })
+$('#header').load( "./tpl/header.html", function( response, status, xhr ) {
+  if ( status == "error" ) {
+    //失败，可以重新读取一次，也可以重读多次，根据需要定
+    // console.log( xhr.status + "|" + xhr.statusText );
+  }
+});
+</script>
+</html>
